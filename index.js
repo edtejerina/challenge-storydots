@@ -13,6 +13,9 @@ app.use(cors());
 
 //Definiendo las rutas
 app.use('/api/weather/', weatherRoute);
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/frontend/build/index.html'));
+  });
 
 //Puerto
 const port = process.env.PORT || 4000;
