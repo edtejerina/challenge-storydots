@@ -6,7 +6,6 @@ const db = require('../database.json')
 
 
 router.get('/', function(req, res){
-  
     //Si existe una query param
     if(req.query.name){
       const data = db.find(element => element.name === req.query.name);
@@ -21,7 +20,7 @@ router.get('/:id', (req, res) => {
     //Buscando si existe una ciudad con ese id
     const data = db.find(element => element.id == req.params.id );
 
-    //Si exite retorna el json, caso contrario envia un mensaje
+    //Si exite retorna el json, caso contrario envia un mensaje de error
     data ? res.json(data) : res.status(404).json({"code": 404});
 });
 
