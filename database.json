@@ -1,0 +1,42 @@
+[
+    {   
+        "id": 1,
+        "name": "La Plata",
+        "coord": {
+        "lon": -57.9544,
+        "lat": -34.9214
+        },
+        "weather": {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        },
+        "main": {
+        "temp_min": 20,
+        "temp_max": 32,
+        "pressure": 1015,
+        "humidity": 30
+        }
+    },
+    {   
+        "id": 2,
+        "name": "Olavarria",
+        "coord": {
+        "lon": -57.9544,
+        "lat": -34.9214
+        },
+        "weather": {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        },
+        "main": {
+        "temp_min": 10,
+        "temp_max": 22,
+        "pressure": 1015,
+        "humidity": 30
+        }
+    }
+]
