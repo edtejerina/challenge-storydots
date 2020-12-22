@@ -2,6 +2,9 @@ const express =  require('express');
 const weatherRoute = require('./routes/weather.js');
 const cors = require('cors');
 
+
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
 //Creando el servidor
 const app = express();
 
