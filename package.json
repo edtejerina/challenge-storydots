@@ -4,7 +4,7 @@
   "description": "Backend using Mongo and Express",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./index.js",
     "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "author": "Edgar Sardina Tejerina",
